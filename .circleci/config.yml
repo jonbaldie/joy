@@ -8,6 +8,6 @@ jobs:
       - run: joy new foo && ls foo
 
 workflows:
-  build_and_test:
+  test:
     jobs:
       - test
