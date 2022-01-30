@@ -22,7 +22,7 @@ RUN git clone https://github.com/eradman/entr.git && \
     cd entr && \
     ./configure && \
     make test && \
-     make install
+    make install
 
 RUN jpm install joy
 
