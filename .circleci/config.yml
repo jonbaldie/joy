@@ -1,23 +1,13 @@
 version: 2.1
 
-# Define the jobs we want to run for this project
 jobs:
-  build:
-    docker:
-      - image: jonbaldie/joy:latest
-    steps:
-      - checkout
-      - run: make build
   test:
     docker:
       - image: jonbaldie/joy:latest
     steps:
-      - checkout
-      - run: make test
+      - run: joy new foo && ls foo
 
-# Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
-      - build
       - test
