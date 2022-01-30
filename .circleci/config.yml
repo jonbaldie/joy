@@ -5,7 +5,6 @@ jobs:
     docker:
       - image: jonbaldie/joy:latest
     steps:
-      - run: pwd | grep '/usr/src/app'
       - run: which janet | grep '/usr/local/bin/janet'
       - run: which jpm | grep '/usr/local/bin/jpm'
       - run: which joy | grep '/usr/local/bin/joy'
