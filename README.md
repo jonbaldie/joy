@@ -1,6 +1,6 @@
 ### Joy Framework Docker Repository
 
-[![Build Status](https://travis-ci.org/jonbaldie/joy.svg?branch=master)](https://travis-ci.org/jonbaldie/joy)
+[![CircleCI](https://circleci.com/gh/jonbaldie/joy/tree/main.svg?style=svg)](https://circleci.com/gh/jonbaldie/joy/tree/main)
 
 To use:
 
