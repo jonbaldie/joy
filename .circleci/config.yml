@@ -5,10 +5,6 @@ jobs:
     docker:
       - image: jonbaldie/joy:latest
     steps:
-      - run: which janet | grep '/usr/local/bin/janet'
-      - run: which jpm | grep '/usr/local/bin/jpm'
-      - run: which joy | grep '/usr/local/bin/joy'
-      - run: which entr | grep '/usr/local/bin/entr'
       - run: joy new foo && ls foo
 
 workflows:
