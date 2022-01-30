@@ -18,11 +18,10 @@ RUN git clone --depth=1 https://github.com/janet-lang/jpm.git && \
     jpm install jpm
 
 # Required for `joy server`
-RUN git clone https://github.com/eradman/entr.git && \
-    cd entr && \
+RUN git clone https://github.com/eradman/entr.git /tmp/entr && \
+    cd /tmp/entr && \
     ./configure && \
-    make test && \
-    make install
+    make test install
 
 RUN jpm install joy
 
